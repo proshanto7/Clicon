@@ -13,6 +13,9 @@ import {
 import { CiShoppingCart, CiHeart } from "react-icons/ci";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { IoIosArrowDown, IoMdHelpCircleOutline } from "react-icons/io";
+import { LuMapPin, LuGitCompareArrows, LuPhoneCall } from "react-icons/lu";
+import { AiOutlineCustomerService } from "react-icons/ai";
 import Image from "../ui/Image";
 
 function Header() {
@@ -89,47 +92,86 @@ function Header() {
         </Container>
       </div>
 
-      <nav className="bg-primary py-5">
-        <Container>
-          <div className="flex justify-between items-center">
-            <a href="#">
-              <Image imgUrl={logo} alt='logo' />
-            </a>
+      <nav>
+        <div className="bg-primary py-5">
+          <Container>
+            <div className="flex justify-between items-center">
+              <a href="#">
+                <Image imgUrl={logo} alt="logo" />
+              </a>
 
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search for anything..."
-                className="px-5 py-3.5 bg-white w-161.5  rounded-xs"
-              />
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search for anything..."
+                  className="px-5 py-3.5 bg-white w-161.5  rounded-xs"
+                />
 
-<button className="cursor-pointer absolute right-5 top-[50%] translate-y-[-50%] text-gray-500/90 hover:text-primaryOrenge duration-300">
+                <button className="cursor-pointer absolute right-5 top-[50%] translate-y-[-50%] text-gray-500/90 hover:text-primaryOrenge duration-300">
+                  <FaMagnifyingGlass className=" " />
+                </button>
+              </div>
 
-<FaMagnifyingGlass className=" "/>
-</button>
+              <div>
+                <ul className="flex gap-6 items-center text-[32px] text-white">
+                  <li>
+                    <a href="#">
+                      <CiShoppingCart />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <CiHeart />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <AiOutlineUser />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </Container>
+        </div>
 
-            <div>
-              <ul className="flex gap-6 items-center text-[32px] text-white">
-                <li>
-                  <a href="#">
-                    <CiShoppingCart />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <CiHeart />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <AiOutlineUser />
-                  </a>
-                </li>
-              </ul>
+        <div className="bg-white py-4 border-b border-dotted border-gray-500/50">
+          <Container>
+            <div className="flex items-center justify-between ">
+              <div>
+                <ul className="flex items-center gap-0">
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer ">
+                    <span>All Category</span>
+                    <IoIosArrowDown />
+                  </li>
+
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                    {" "}
+                    <LuMapPin />
+                    <span>Track Order</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                    <LuGitCompareArrows />
+                    <span>Compare</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                    <AiOutlineCustomerService />
+                    <span>Customer Support</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                    <IoMdHelpCircleOutline />
+                    <span>Need Help</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <LuPhoneCall />
+                <p>+1-202-555-0104</p>
+              </div>
             </div>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </nav>
     </header>
   );
