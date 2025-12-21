@@ -16,35 +16,53 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoIosArrowDown, IoMdHelpCircleOutline } from "react-icons/io";
 import { LuMapPin, LuGitCompareArrows, LuPhoneCall } from "react-icons/lu";
 import { AiOutlineCustomerService } from "react-icons/ai";
+import { MdOutlineCancel } from "react-icons/md";
 import Image from "../ui/Image";
+import { useState } from "react";
 
 function Header() {
+  const [isOn, setIsOn] = useState(true);
+  const handleBlackFriday = () => {
+    setIsOn(!isOn);
+  };
+
   return (
     <header>
-      <div className="bg-primaryBlack py-2">
-        <Container>
-          <div className="flex items-center justify-between ">
-            <div className="flex items-center gap-2 transform-flat">
-              <button className="bg-discount text-[20px] font-semibold px-2 leading-7 capitalize cursor-pointer rotate-[-8deg] ">
-                black
-              </button>
+      {isOn && (
+        <div className="bg-primaryBlack py-2 relative ">
+          <Container>
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center gap-2 transform-flat">
+                <button className="bg-discount text-[20px] font-semibold px-2 leading-7 capitalize cursor-pointer rotate-[-8deg] ">
+                  black
+                </button>
 
-              <h1 className="font-semibold text-white text-[24px]">Friday</h1>
+                <h1 className="font-semibold text-white text-[24px]">Friday</h1>
+              </div>
+
+              <div className="flex gap-1 items-center text-white">
+                <span className="text-[14px] font-medium">Up to</span>
+                <h2 className="text-warning text-[40px] font-semibold  ">
+                  59%
+                </h2>
+                <span className="text-white text-[20px]">OFF</span>
+              </div>
+
+              <Button
+                title="Shop now"
+                className="bg-warning hover:bg-primaryOrenge duration-300"
+              />
             </div>
+          </Container>
 
-            <div className="flex gap-1 items-center text-white">
-              <span className="text-[14px] font-medium">Up to</span>
-              <h2 className="text-warning text-[40px] font-semibold  ">59%</h2>
-              <span className="text-white text-[20px]">OFF</span>
-            </div>
-
-            <Button
-              title="Shop now"
-              className="bg-warning hover:bg-primaryOrenge duration-300"
-            />
-          </div>
-        </Container>
-      </div>
+          <button
+            onClick={handleBlackFriday}
+            className=" text-white text-2xl absolute right-0 top-[50%] translate-y-[-50%] cursor-pointer"
+          >
+            <MdOutlineCancel />
+          </button>
+        </div>
+      )}
 
       <div className="bg-primary py-3 border-b  border-gray-300/20">
         <Container>
