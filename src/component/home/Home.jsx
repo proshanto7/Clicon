@@ -1,0 +1,22 @@
+import React from 'react'
+
+function Home() {
+  return (
+    <div>
+
+
+
+
+
+<h1 className='text-4xl bg-green-500 text-center'>prosahnto</h1>
+
+
+
+
+
+
+    </div>
+  )
+}
+
+export default Home
