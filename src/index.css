@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primaryBlack: #191C1F;
-  --color-warning: #EBC80C;
-  --color-primary: #1B6392;
-  --color-white: #FFFFFF;
+  --color-primaryBlack: #191c1f;
+  --color-warning: #ebc80c;
+  --color-primary: #1b6392;
+  --color-white: #ffffff;
   --color-lightGray: #475156;
   --color-black: #000000;
-  --color-discount: #F3DE6D;
-  --color-primaryOrenge: #FA8232;
-  --font-publicSans: 'Public Sans', sans-serif;
+  --color-discount: #f3de6d;
+  --color-primaryOrenge: #fa8232;
+  --font-publicSans: "Public Sans", sans-serif;
 }
 
-
-.tast{
-  transform: rotate(20deg);
+a:hover {
+  color: var(--color-warning);
+  transition: 0.4s linear;
 }
