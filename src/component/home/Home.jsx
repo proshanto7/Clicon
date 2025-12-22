@@ -2,14 +2,15 @@ import Container from "../common/Container";
 import Image from "../ui/Image";
 import heroImg from "../../assets/images/hero/hero.png";
 import phoneImg from "../../assets/images/hero/phone.png";
+import airPodImg from "../../assets/images/hero/airPod.png";
 import Button from "../ui/Button";
 
 function Home() {
   return (
-    <section>
+    <section className="my-6">
       <Container>
         <div className="flex gap-6">
-          <div className="max-w-218 p-14 flex items-center bg-lightGray/10">
+          <div className="max-w-218 p-14 flex items-center bg-[#F2F4F5] rounded-md">
             <div>
               <h5 className="text-primary text-[14px] font-semibold leading-5">
                 THE BEST PLACE TO PLAY
@@ -32,7 +33,7 @@ function Home() {
             </div>
           </div>
           <div className="max-w-106">
-            <div className="bg-black flex  items-center pt-12 ps-10">
+            <div className="bg-black flex  items-center pt-12 ps-10 rounded-md">
               <div>
                 <h6 className="text-warning font-medium text-[14px] uppercase">
                   Summer Sales
@@ -40,7 +41,7 @@ function Home() {
                 <h4 className="text-2xl font-semibold text-white leading-8 max-w-40">
                   New Google Pixel 6 Pro
                 </h4>
-                <Button title="shop now" className="mt-4.5 mb-8" />
+                <Button title="shop now" className="mt-4.5 mb-12 text-white" />
               </div>
 
               <div className="relative">
@@ -50,6 +51,34 @@ function Home() {
                 </button>
               </div>
             </div>
+
+
+
+<div className="bg-[#F2F4F5] flex gap-5 items-center p-10 mt-6 rounded-md">
+<div>
+
+
+<Image imgUrl={airPodImg} alt="airpod img"/>
+
+
+</div>
+
+<div>
+
+<h3 className="text-2xl font-semibold leading-8 text-black/90 max-w-43 mb-6">Xiaomi FlipBuds Pro</h3>
+<strong className="text-lg text-primary leading-6 font-semibold">$299 USD</strong>
+<Button title="Shop now" className='text-white mt-5' />
+
+</div>
+
+
+
+
+</div>
+
+
+
+
           </div>
         </div>
       </Container>
