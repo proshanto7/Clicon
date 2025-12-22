@@ -9,7 +9,9 @@
   --color-black: #000000;
   --color-discount: #f3de6d;
   --color-primaryOrenge: #fa8232;
+  --color-textColor: #191C1F;
   --font-publicSans: "Public Sans", sans-serif;
+  --shadow-category: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 a:hover {

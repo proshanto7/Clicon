@@ -1,4 +1,4 @@
-import { PiPackageDuotone } from "react-icons/pi";
+
 
 function FeaturesItem({ item }) {
   let { icon, info1, info2 } = item;
