@@ -21,10 +21,6 @@ a:hover {
 
 
 .discountBtn{
-
-
-
-
   background-color: var(--color-discount);
   color: var(--color-black);
   padding: 10px 20px;
@@ -38,4 +34,22 @@ a:hover {
 .discountBtn:hover{
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+
+.fCategory::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-primaryOrenge);
+
+ 
+}
+.fCategory:hover::after{
+  width: 90%;
+  transition: width 0.3s ease-in-out;
 }
