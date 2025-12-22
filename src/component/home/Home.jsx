@@ -9,7 +9,7 @@ function Home() {
   return (
     <section className="my-6">
       <Container>
-        <div className="flex gap-6">
+        <div className="flex justify-between ">
           <div className="max-w-218 p-14 flex items-center bg-[#F2F4F5] rounded-md">
             <div>
               <h5 className="text-primary text-[14px] font-semibold leading-5">
@@ -32,7 +32,7 @@ function Home() {
               </strong>
             </div>
           </div>
-          <div className="max-w-106">
+          <div className="max-w-140">
             <div className="bg-black flex  items-center pt-12 ps-10 rounded-md">
               <div>
                 <h6 className="text-warning font-medium text-[14px] uppercase">
@@ -52,33 +52,21 @@ function Home() {
               </div>
             </div>
 
+            <div className="bg-[#F2F4F5] flex gap-5 items-center p-10 mt-6 rounded-md">
+              <div>
+                <Image imgUrl={airPodImg} alt="airpod img" />
+              </div>
 
-
-<div className="bg-[#F2F4F5] flex gap-5 items-center p-10 mt-6 rounded-md">
-<div>
-
-
-<Image imgUrl={airPodImg} alt="airpod img"/>
-
-
-</div>
-
-<div>
-
-<h3 className="text-2xl font-semibold leading-8 text-black/90 max-w-43 mb-6">Xiaomi FlipBuds Pro</h3>
-<strong className="text-lg text-primary leading-6 font-semibold">$299 USD</strong>
-<Button title="Shop now" className='text-white mt-5' />
-
-</div>
-
-
-
-
-</div>
-
-
-
-
+              <div>
+                <h3 className="text-2xl font-semibold leading-8 text-black/90 max-w-43 mb-6">
+                  Xiaomi FlipBuds Pro
+                </h3>
+                <strong className="text-lg text-primary leading-6 font-semibold">
+                  $299 USD
+                </strong>
+                <Button title="Shop now" className="text-white mt-5" />
+              </div>
+            </div>
           </div>
         </div>
       </Container>

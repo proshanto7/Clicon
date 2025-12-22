@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './component/header/Header'
 import Home from './component/home/Home'
+import Features from './component/features/Features'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
 <Header/>
 
 <Home/>
-
+<Features/>
 
     </main>
   )
