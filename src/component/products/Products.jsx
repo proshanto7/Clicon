@@ -1,6 +1,7 @@
-import phoneimg from "../../assets/images/products/phone/image.png";
 import Image from "../ui/Image";
-function Products() {
+import { CiHeart, CiShoppingCart } from "react-icons/ci";
+import { IoEyeOutline } from "react-icons/io5";
+function Products({ item, key }) {
   const star = [
     {
       id: 1,
@@ -88,40 +89,55 @@ function Products() {
       ),
     },
   ];
-
+  const { imgUrl, name, price, rating } = item;
   return (
-    <div className="border border-lightGray/20 p-3.5 w-58.5 rounded-[3px]">
-      <Image imgUrl={phoneimg} />
+    <div key={key} className="border border-lightGray/20 p-3.5 rounded-[3px] hover:shadow-category duration-300">
+      <div className="relative group"> 
+
+      <Image imgUrl={imgUrl} />
+      <div className=" bg-lightGray/20 absolute w-full h-full scale-0 top-0 opacity-0 group-hover:opacity-100 group-hover:scale-100  duration-500">
+        <ul className="flex gap-4 items-center justify-center absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
+          <li
+            className="text-2xl rounded-full cursor-pointer bg-white p-3 text-textColor hover:bg-primaryOrenge duration-300 hover:text-white"
+          >
+           
+            <CiHeart />
+          </li>
+          <li
+            className="text-2xl rounded-full cursor-pointer bg-white p-3 text-textColor hover:bg-primaryOrenge duration-300 hover:text-white"
+          >
+           
+            <CiShoppingCart />
+          </li>
+          <li
+            className="text-2xl rounded-full cursor-pointer bg-white p-3 text-textColor hover:bg-primaryOrenge duration-300 hover:text-white"
+          >
+         
+            <IoEyeOutline />
+          </li>
+        </ul>
+      </div>
+
+      </div>
+
 
       <div className="mt-6">
-      
-<div className="flex items-center">
+        <div className="flex items-center">
+          <ul className="flex items-center gap-0">
+            {star.map((item) => (
+              <li key={item.id}>{item.icon}</li>
+            ))}
+          </ul>
 
-<ul className="flex items-center gap-0">
-  {
+          <p className="text-gray-500 text-[14px] leading-4 ">({rating})</p>
+        </div>
 
-star.map((item)=>(
-
-
-<li key={item.id}>{item.icon}</li>
-
-
-))
-
-  }
-</ul>
-
-<p className="text-gray-500 text-[14px] leading-4 ">(738)</p>
-
-</div>
-
-
-        <h5 className="text-[14px] font-normal leading-5 text-textColor py-2  ">
-          TOZO T6 True Wireless Earbuds Bluetooth Headphon...
+        <h5 className="text-[14px] cursor-pointer hover:text-primaryOrenge duration-300 font-normal leading-5 text-textColor py-2  ">
+          {name}
         </h5>
 
         <strong className="text-[14px] font-semibold text-primary leading-5">
-          $70
+          ${price}
         </strong>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../common/Container";
 import Button from "../ui/Button";
 import Image from "../ui/Image";
@@ -6,6 +5,13 @@ import disImg from "../../assets/images/products/discount.png";
 import List from "../ui/List";
 import { FiArrowRight } from "react-icons/fi";
 import Products from "./Products";
+import acImg from "../../assets/images/products/ac/ac.png";
+import s23Img from "../../assets/images/products/phone/s23.png";
+import phoneimg from "../../assets/images/products/phone/image.png";
+import oneplusimg from "../../assets/images/products/phone/oneplus.png";
+import headphoneImg from "../../assets/images/products/headphone/headphone.png";
+import monitorImg from "../../assets/images/products/monitor/monitor.png";
+import tvImg from "../../assets/images/products/tv/tv.png";
 
 function FeaturedProducts() {
   const productCatagory = [
@@ -31,11 +37,70 @@ function FeaturedProducts() {
     },
   ];
 
+  const productList = [
+    {
+      id: 1,
+      name: "TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+      price: 70,
+      rating: 738,
+      imgUrl: phoneimg,
+    },
+    {
+      id: 2,
+      name: "Samsung Electronics Samsung Galexy S21 5G",
+      price: 2300,
+      rating: 536,
+      imgUrl: s23Img,
+    },
+    {
+      id: 3,
+      name: "Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+      price: 360,
+      rating: 423,
+      imgUrl: acImg,
+    },
+    {
+      id: 4,
+      name: "Wired Over-Ear Gaming Headphones with USB",
+      price: 1500,
+      rating: 647,
+      imgUrl: headphoneImg,
+    },
+    {
+      id: 5,
+      name: "Polaroid 57-Inch Photo/Video Tripod with Deluxe Tripod Ca...",
+      price: 1200,
+      rating: 877,
+      imgUrl: tvImg,
+    },
+    {
+      id: 6,
+      name: "Dell Optiplex 7000x7480 All-in-One Computer Monitor",
+      price: 250,
+      rating: 250,
+      imgUrl: monitorImg,
+    },
+    {
+      id: 7,
+      name: "4K UHD LED Smart TV with Chromecast Built-in",
+      price: 220,
+      rating: 583,
+      imgUrl: oneplusimg,
+    },
+    {
+      id: 8,
+      name: "Portable Wshing Machine, 11lbs capacity Model 18NMF...",
+      price: 80,
+      rating: 816,
+      imgUrl: phoneimg,
+    },
+  ];
+
   return (
     <section>
       <Container>
         <div className="flex justify-between gap-6">
-          <div className="max-w-78 bg-[#F3DE6D]  ">
+          <div className="max-w-78 bg-[#F3DE6D] flex flex-col justify-between  ">
             <div className="pt-8 px-4.5">
               <div className="text-center">
                 <h6 className="text-[14px] font-semibold leading-5 text-[#BE4646] mb-2">
@@ -49,7 +114,7 @@ function FeaturedProducts() {
                 </p>
               </div>
 
-              <div className="flex gap-2 items-center mt-4">
+              <div className="flex gap-2 items-center  mt-4">
                 <p className="text-[14px] font-medium text-textColor leading-5">
                   Offers ends in:
                 </p>
@@ -65,8 +130,8 @@ function FeaturedProducts() {
             </div>
           </div>
 
-          <div className="w-full ">
-            <div className="w-full flex items-center justify-between ">
+          <div className="max-w-246 ">
+            <div className=" w-full flex items-center justify-between ">
               <div>
                 <h4 className="text-2xl font-semibold text-textColor leading-8">
                   Featured Products
@@ -90,19 +155,11 @@ function FeaturedProducts() {
               </div>
             </div>
 
-<div>
-
-
-
-
-<Products/>
-
-
-</div>
-
-
-
-
+            <div className="grid grid-cols-4 gap-4 mt-6">
+              {productList.map((item) => (
+                <Products item={item} key={item.id} />
+              ))}
+            </div>
           </div>
         </div>
       </Container>
