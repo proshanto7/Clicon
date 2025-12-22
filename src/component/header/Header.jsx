@@ -19,6 +19,7 @@ import { AiOutlineCustomerService } from "react-icons/ai";
 import { MdOutlineCancel } from "react-icons/md";
 import Image from "../ui/Image";
 import { useState } from "react";
+import { categoryList } from "../category/Category";
 
 function Header() {
   const [isOn, setIsOn] = useState(true);
@@ -158,25 +159,35 @@ function Header() {
             <div className="flex items-center justify-between ">
               <div>
                 <ul className="flex items-center gap-0">
-                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer ">
+                  <li className="dropDown relative flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer ">
                     <span>All Category</span>
                     <IoIosArrowDown />
+
+                    <div className="dropDownList absolute">
+                      <ul>
+                        {categoryList.map((item) => (
+                          <li className="border border-textColor/20 hover:text-white duration-300 hover:bg-primaryOrenge p-2 mb-2 text-textColor font-semibold ">
+                            {item.categoryName}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </li>
 
-                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
-                    {" "}
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                  
                     <LuMapPin />
                     <span>Track Order</span>
                   </li>
-                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
                     <LuGitCompareArrows />
                     <span>Compare</span>
                   </li>
-                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
                     <AiOutlineCustomerService />
                     <span>Customer Support</span>
                   </li>
-                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-[#191C1F] hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
+                  <li className="flex items-center gap-2 text-[14px] text-[#5F6C72] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer">
                     <IoMdHelpCircleOutline />
                     <span>Need Help</span>
                   </li>

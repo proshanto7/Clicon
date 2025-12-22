@@ -8,40 +8,39 @@ import keybordImg from "../../assets/images/Category/keybord.png";
 import cameraImg from "../../assets/images/Category/camera.png";
 import tvImg from "../../assets/images/Category/tv.png";
 
+export const categoryList = [
+  {
+    id: 1,
+    categoryName: "Computer & Laptop",
+    categoryImg: laptopImg,
+  },
+  {
+    id: 2,
+    categoryName: "SmartPhone",
+    categoryImg: phoneImg,
+  },
+  {
+    id: 3,
+    categoryName: "Camera & Photo",
+    categoryImg: cameraImg,
+  },
+  {
+    id: 4,
+    categoryName: "Headphones",
+    categoryImg: headphoneImg,
+  },
+  {
+    id: 5,
+    categoryName: "Accessories",
+    categoryImg: keybordImg,
+  },
+  {
+    id: 6,
+    categoryName: "TV & Homes",
+    categoryImg: tvImg,
+  },
+];
 function Category() {
-  const categoryList = [
-    {
-      id: 1,
-      categoryName: "Computer & Laptop",
-      categoryImg: laptopImg,
-    },
-    {
-      id: 2,
-      categoryName: "SmartPhone",
-      categoryImg: phoneImg,
-    },
-    {
-      id: 3,
-      categoryName: "Camera & Photo",
-      categoryImg: cameraImg,
-    },
-    {
-      id: 4,
-      categoryName: "Headphones",
-      categoryImg: headphoneImg,
-    },
-    {
-      id: 5,
-      categoryName: "Accessories",
-      categoryImg: keybordImg,
-    },
-    {
-      id: 6,
-      categoryName: "TV & Homes",
-      categoryImg: tvImg,
-    },
-  ];
-
   return (
     <section className="py-5">
       <Container>
@@ -49,25 +48,11 @@ function Category() {
           Shop with Categorys
         </h2>
 
-<div className="flex justify-between items-center mt-10">
-{
-categoryList.map((item) =>(
-
-
-
-
-<CategoryItem item={item} key={item.id} />
-
-
-))
-
-
-
-}
-
-
-</div>
-
+        <div className="flex justify-between items-center mt-10">
+          {categoryList.map((item) => (
+            <CategoryItem item={item} key={item.id} />
+          ))}
+        </div>
       </Container>
     </section>
   );

@@ -9,7 +9,7 @@
   --color-black: #000000;
   --color-discount: #f3de6d;
   --color-primaryOrenge: #fa8232;
-  --color-textColor: #191C1F;
+  --color-textColor: #191c1f;
   --font-publicSans: "Public Sans", sans-serif;
   --shadow-category: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -19,8 +19,7 @@ a:hover {
   transition: 0.4s linear;
 }
 
-
-.discountBtn{
+.discountBtn {
   background-color: var(--color-discount);
   color: var(--color-black);
   padding: 10px 20px;
@@ -31,13 +30,12 @@ a:hover {
   transition: 0.3s ease-in-out;
 }
 
-.discountBtn:hover{
+.discountBtn:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
 
-
-.fCategory::after{
+.fCategory::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -46,10 +44,21 @@ a:hover {
   width: 0%;
   height: 2px;
   background-color: var(--color-primaryOrenge);
-
- 
 }
-.fCategory:hover::after{
+.fCategory:hover::after {
   width: 90%;
   transition: width 0.3s ease-in-out;
+}
+
+.dropDown:hover .dropDownList {
+  transform: scaleX(1);
+}
+.dropDownList {
+  top: 65px;
+  left: 0;
+  transform: scaleX(0);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-category);
+  z-index: 10;
+  transition: 0.5s ease-in-out;
 }
