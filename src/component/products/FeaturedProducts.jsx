@@ -97,7 +97,7 @@ function FeaturedProducts() {
   ];
 
   return (
-    <section>
+    <section className="py-9">
       <Container>
         <div className="flex justify-between gap-6">
           <div className="max-w-78 bg-[#F3DE6D] flex flex-col justify-between  ">
