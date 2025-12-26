@@ -5,6 +5,7 @@ import Features from "./component/features/Features";
 import Category from "./component/category/Category";
 import FeaturedProducts from "./component/products/FeaturedProducts";
 import Banner from "./component/banner/Banner";
+import SalesProduct from "./component/products/SalesProduct";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Category/>
       <FeaturedProducts/>
       <Banner/>
+      <SalesProduct/>
     </main>
   );
 }
