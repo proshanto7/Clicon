@@ -6,6 +6,7 @@ import Category from "./component/category/Category";
 import FeaturedProducts from "./component/products/FeaturedProducts";
 import Banner from "./component/banner/Banner";
 import SalesProduct from "./component/products/SalesProduct";
+import NewsLetter from "./component/newsLetter/NewsLetter";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <FeaturedProducts/>
       <Banner/>
       <SalesProduct/>
+      <NewsLetter/>
     </main>
   );
 }
