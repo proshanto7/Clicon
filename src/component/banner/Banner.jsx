@@ -24,13 +24,14 @@ function Banner() {
 
               <Button title="shop now" className="text-white" />
             </div>
-
-            <Image imgUrl={appleImg} alt="image" />
+            <div>
+              <Image imgUrl={appleImg} alt="image" />
+            </div>
           </div>
 
-          <div className="w-2/4 flex justify-between items-center  bg-textColor p-11 rounded-sm">
-            <div>
-              <strong className="text-[14px] font-semibold leading-5.5 px-3 py-1 bg-primary rounded-xs mb-2 text-white">
+          <div className="w-2/4 flex justify-between items-center  bg-textColor px-11 pt-11 rounded-sm">
+            <div className="pb-11">
+              <strong className="text-[14px] font-semibold leading-5.5 px-3 py-1 bg-warning rounded-xs mb-2 text-black">
                 INTRODUCING NEW
               </strong>
               <h2 className="max-w-70 text-[32px] font-semibold text-white leading-10 my-3">
