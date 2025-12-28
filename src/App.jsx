@@ -7,6 +7,7 @@ import FeaturedProducts from "./component/products/FeaturedProducts";
 import Banner from "./component/banner/Banner";
 import SalesProduct from "./component/products/SalesProduct";
 import NewsLetter from "./component/newsLetter/NewsLetter";
+import Footer from "./component/footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Banner/>
       <SalesProduct/>
       <NewsLetter/>
+      <Footer/>
     </main>
   );
 }

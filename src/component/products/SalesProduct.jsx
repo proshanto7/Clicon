@@ -17,13 +17,13 @@ function SalesProduct() {
       price: 1500,
     },
     {
-      id: 1,
+      id: 2,
       img: phoneImg,
       title: "Simple Mobile 4G LTE Prepaid Smartphone",
       price: 1500,
     },
     {
-      id: 1,
+      id: 3,
       img: keybordImg,
       title: "4K UHD LED Smart TV with Chromecast Built-in",
       price: 1500,
@@ -37,13 +37,13 @@ function SalesProduct() {
       price: 1500,
     },
     {
-      id: 1,
+      id: 2,
       img: sonyPhoneImg,
       title: "Simple Mobile 5G LTE Galexy 12 Mini 512GB Gaming Phone",
       price: 1500,
     },
     {
-      id: 1,
+      id: 3,
       img: cameraImg,
       title: "Sony DSCHX8 High Zoom Point & Shoot Camera",
       price: 1500,

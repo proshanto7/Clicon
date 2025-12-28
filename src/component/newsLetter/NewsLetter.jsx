@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../common/Container";
 import Button from "../ui/Button";
 import samsungImg from "../../assets/images/company/samsung.png";
@@ -56,22 +55,9 @@ function NewsLetter() {
           </div>
 
           <div className="flex justify-center gap-12 items-center mt-8">
-
-
-{
-company.map((company) =>(
-
-
-<Image imgUrl={company.img} alt="img"/>
-
-
-))
-
-
-}
-
-
-
+            {company.map((company) => (
+              <Image imgUrl={company.img} alt="img" />
+            ))}
           </div>
         </div>
       </Container>
