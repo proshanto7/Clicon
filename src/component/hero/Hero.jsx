@@ -5,7 +5,7 @@ import phoneImg from "../../assets/images/hero/phone.png";
 import airPodImg from "../../assets/images/hero/airPod.png";
 import Button from "../ui/Button";
 
-function Home() {
+function Hero() {
   return (
     <section className="sm:my-6">
       <Container>
@@ -52,7 +52,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="bg-[#F2F4F5] flex gap-5 items-center p-4 md:p-10 mt-6 rounded-md">
+            <div className="bg-[#F2F4F5] flex gap-5 justify-between items-center p-4 md:p-10 mt-6 rounded-md">
               <div>
                 <Image imgUrl={airPodImg} alt="airpod img" />
               </div>
@@ -74,4 +74,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Hero;

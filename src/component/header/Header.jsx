@@ -163,7 +163,7 @@ function Header() {
                       <AiOutlineUser />
                     </a>
                   </li>
-                  <li className="text-2xl border border-warning md:hidden flex items-center">
+                  <li className="text-2xl border border-warning lg:hidden flex items-center">
                     <button onClick={() => setMobileMenuBtn(!MobileMenuBtn)}>
                       <MdMenu />
                     </button>
@@ -185,11 +185,11 @@ function Header() {
         </div>
 
         {MobileMenuBtn ? (
-          <div className="absolute w-full md:hidden block py-1 z-999 translate-x-0 duration-500">
+          <div className="absolute w-full lg:hidden block py-1 z-999 translate-x-0 duration-500">
             <Container>
-              <div className="bg-red-100 flex flex-col md:flex-row items-center justify-between ">
+              <div className="bg-red-100 flex flex-col lg:flex-row items-center justify-between ">
                 <div className="w-full">
-                  <ul className="w-full bg-teal-400 flex flex-col md:flex-row items-center gap-0">
+                  <ul className="w-full bg-teal-400 flex flex-col lg:flex-row items-center gap-0">
                     <li className="dropDown w-full justify-center bg-primary text-white border-b relative flex items-center  gap-2 text-[14px] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer ">
                       <span>All Category</span>
                       <IoIosArrowDown />
@@ -232,11 +232,11 @@ function Header() {
             </Container>
           </div>
         ) : (
-          <div className="absolute w-full md:hidden block py-1 z-999 -translate-x-400 duration-300">
+          <div className="absolute w-full lg:hidden block py-1 z-999 -translate-x-400 duration-300">
             <Container>
-              <div className="bg-red-100 flex flex-col md:flex-row items-center justify-between ">
+              <div className="bg-red-100 flex flex-col lg:flex-row items-center justify-between ">
                 <div className="w-full">
-                  <ul className="w-full bg-teal-400 flex flex-col md:flex-row items-center gap-0">
+                  <ul className="w-full bg-teal-400 flex flex-col lg:flex-row items-center gap-0">
                     <li className="dropDown w-full justify-center bg-primary text-white border-b relative flex items-center  gap-2 text-[14px] px-6 py-3.5 hover:text-textColor hover:bg-[#F2F4F5] duration-300 rounded-xs cursor-pointer ">
                       <span>All Category</span>
                       <IoIosArrowDown />
@@ -280,7 +280,7 @@ function Header() {
           </div>
         )}
 
-        <div className="hidden md:block bg-white py-4 border-b border-dotted border-gray-500/50">
+        <div className="hidden lg:block bg-white py-4 border-b border-dotted border-gray-500/50">
           <Container>
             <div className="flex flex-col md:flex-row items-center justify-between ">
               <div>

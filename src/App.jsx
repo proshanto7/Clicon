@@ -1,6 +1,5 @@
-import React from "react";
 import Header from "./component/header/Header";
-import Home from "./component/home/Home";
+import Hero from "./component/hero/Hero";
 import Features from "./component/features/Features";
 import Category from "./component/category/Category";
 import FeaturedProducts from "./component/products/FeaturedProducts";
@@ -13,14 +12,14 @@ function App() {
   return (
     <main className="font-publicSans">
       <Header />
-      <Home />
-      {/* <Features />
+      <Hero />
+      <Features />
       <Category/>
       <FeaturedProducts/>
       <Banner/>
       <SalesProduct/>
       <NewsLetter/>
-      <Footer/> */}
+      <Footer/>
     </main>
   );
 }

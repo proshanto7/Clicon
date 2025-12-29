@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../common/Container";
 import FeaturesItem from "./FeaturesItem";
 import { PiPackageDuotone,PiCreditCardLight,PiTrophy  ,PiHeadphones } from "react-icons/pi";
@@ -35,7 +34,7 @@ function Features() {
     <section>
       <Container>
 
-        <div className="flex justify-between items-center border border-gray-300 rounded-md">
+        <div className="flex flex-col gap-2 sm:grid lg:gap-0 sm:grid-cols-2 lg:grid-cols-4 border border-gray-300 rounded-md">
 
         {FeaturesList.map((featuresItems) => (
           <FeaturesItem item={featuresItems} key={featuresItems.id} />
