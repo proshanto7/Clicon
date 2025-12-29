@@ -16,8 +16,8 @@ function App() {
       <Features />
       <Category/>
       <FeaturedProducts/>
-      {/* <Banner/>
-      <SalesProduct/>
+      <Banner/>
+      {/* <SalesProduct/>
       <NewsLetter/>
       <Footer/> */}
     </main>
