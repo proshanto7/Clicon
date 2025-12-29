@@ -36,7 +36,7 @@ function Header() {
   return (
     <header>
       {isOn && (
-        <div className="bg-primaryBlack py-2 relative ">
+        <div className="hidden md:block bg-primaryBlack py-2 relative ">
           <Container>
             <div className="flex items-center justify-between ">
               <div className="flex items-center gap-2 transform-flat">
@@ -232,7 +232,7 @@ function Header() {
             </Container>
           </div>
         ) : (
-          <div className="absolute w-full md:hidden block py-1 z-999 -translate-x-100 duration-300">
+          <div className="absolute w-full md:hidden block py-1 z-999 -translate-x-400 duration-300">
             <Container>
               <div className="bg-red-100 flex flex-col md:flex-row items-center justify-between ">
                 <div className="w-full">

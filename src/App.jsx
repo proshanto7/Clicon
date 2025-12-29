@@ -14,13 +14,13 @@ function App() {
     <main className="font-publicSans">
       <Header />
       <Home />
-      <Features />
+      {/* <Features />
       <Category/>
       <FeaturedProducts/>
       <Banner/>
       <SalesProduct/>
       <NewsLetter/>
-      <Footer/>
+      <Footer/> */}
     </main>
   );
 }
