@@ -99,31 +99,31 @@ function FeaturedProducts() {
   return (
     <section className="py-9">
       <Container>
-        <div className="flex justify-between gap-6">
-          <div className="max-w-78 bg-[#F3DE6D] flex flex-col justify-between  ">
-            <div className="pt-8 px-4.5">
+        <div className="flex flex-col lg:flex-row justify-between gap-6">
+          <div className="w-full lg:max-w-78 bg-[#F3DE6D] flex lg:flex-col flex-col sm:flex-row items-center justify-between  ">
+            <div className="pt-4 lg:pt-8 px-4.5">
               <div className="text-center">
-                <h6 className="text-[14px] font-semibold leading-5 text-[#BE4646] mb-2">
+                <h6 className="text-[14px] font-semibold leading-5 text-[#BE4646] sm:mb-2">
                   COMPUTER & ACCESSORIES
                 </h6>
-                <h4 className="text-textColor text-[32px] font-semibold leading-10 mb-3 ">
+                <h4 className="text-textColor text-2xl sm:text-[32px] font-semibold leading-10 sm:mb-3 ">
                   32% Discount
                 </h4>
-                <p className="text-gray-700 text-[16px] font-normal leading-6 ">
+                <p className="text-gray-700 text-[14px] sm:text-[16px] font-normal leading-6 ">
                   For all ellectronics products
                 </p>
               </div>
 
-              <div className="flex gap-2 items-center  mt-4">
+              <div className="flex gap-2 items-center mt-2 sm:mt-4">
                 <p className="text-[14px] font-medium text-textColor leading-5">
                   Offers ends in:
                 </p>
-                <p className="text-[14px] font-semibold text-textColor bg-white leading-5 py-1.5 px-3">
+                <p className="text-[14px] font-semibold text-textColor bg-white leading-5 py-1 px-1 md:py-1.5 md:px-3">
                   ENDS OF CHRISTMAS
                 </p>
               </div>
 
-              <Button title="shop now" className="mx-auto text-white mt-8" />
+              <Button title="shop now" className="mx-auto text-white mt-4 lg:mt-8" />
             </div>
             <div>
               <Image imgUrl={disImg} alt="img" />
@@ -138,7 +138,7 @@ function FeaturedProducts() {
                 </h4>
               </div>
 
-              <div>
+              <div className="hidden xl:block">
                 <ul className="flex items-center gap-0">
                   {productCatagory.map((item) => (
                     <List
@@ -155,7 +155,7 @@ function FeaturedProducts() {
               </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-4 mt-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
               {productList.map((item) => (
                 <Products item={item} key={item.id} />
               ))}

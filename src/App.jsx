@@ -15,8 +15,8 @@ function App() {
       <Hero />
       <Features />
       <Category/>
-      {/* <FeaturedProducts/>
-      <Banner/>
+      <FeaturedProducts/>
+      {/* <Banner/>
       <SalesProduct/>
       <NewsLetter/>
       <Footer/> */}
