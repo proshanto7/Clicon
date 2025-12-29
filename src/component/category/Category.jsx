@@ -48,7 +48,7 @@ function Category() {
           Shop with Categorys
         </h2>
 
-        <div className="flex justify-between items-center mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 items-center mt-10">
           {categoryList.map((item) => (
             <CategoryItem item={item} key={item.id} />
           ))}

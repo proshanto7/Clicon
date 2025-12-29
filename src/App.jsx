@@ -15,11 +15,11 @@ function App() {
       <Hero />
       <Features />
       <Category/>
-      <FeaturedProducts/>
+      {/* <FeaturedProducts/>
       <Banner/>
       <SalesProduct/>
       <NewsLetter/>
-      <Footer/>
+      <Footer/> */}
     </main>
   );
 }
