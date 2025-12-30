@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 
 function SingUp() {
@@ -28,7 +27,7 @@ function SingUp() {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="#bbb"
                       stroke="#bbb"
-                      class="w-[18px] h-[18px] absolute right-4"
+                      class="w-4.5 h-4.5 absolute right-4"
                       viewBox="0 0 24 24"
                     >
                       <circle
@@ -60,7 +59,7 @@ function SingUp() {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="#bbb"
                       stroke="#bbb"
-                      className="w-[18px] h-[18px] absolute right-4"
+                      className="w-4.5 h-4.5 absolute right-4"
                       viewBox="0 0 682.667 682.667"
                     >
                       <defs>
@@ -103,7 +102,7 @@ function SingUp() {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="#bbb"
                       stroke="#bbb"
-                      className="w-[18px] h-[18px] absolute right-4 cursor-pointer"
+                      className="w-4.5 h-4.5 absolute right-4 cursor-pointer"
                       viewBox="0 0 128 128"
                     >
                       <path

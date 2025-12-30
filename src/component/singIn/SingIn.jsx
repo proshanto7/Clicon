@@ -36,7 +36,7 @@ function SingIn() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    className="w-[18px] h-[18px] absolute right-2"
+                    className="w-4.5 h-4.5 absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
                     <defs>
@@ -79,7 +79,7 @@ function SingIn() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    className="w-[18px] h-[18px] absolute right-2 cursor-pointer"
+                    className="w-4.5 h-4.5 absolute right-2 cursor-pointer"
                     viewBox="0 0 128 128"
                   >
                     <path
@@ -206,7 +206,7 @@ function SingIn() {
           <div className="w-full h-full flex items-center bg-[#000842] rounded-xl p-8">
             <img
               src="https://readymadeui.com/signin-image.webp"
-              className="w-full aspect-[12/12] object-contain"
+              className="w-full aspect-12/12 object-contain"
               alt="login-image"
             />
           </div>
