@@ -160,7 +160,7 @@ function Header() {
                     </a>
                   </li>
                   <li>
-                    <Link to="/SingUp">
+                    <Link to="/SingIn">
                       <AiOutlineUser />
                     </Link>
                   </li>

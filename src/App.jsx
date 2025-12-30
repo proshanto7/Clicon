@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Account from "./pages/Account";
+import Singup from "./pages/Singup";
 function App() {
   const router = createBrowserRouter([
     {
@@ -9,8 +10,12 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/singUp",
+      path: "/singIn",
       element: <Account />,
+    },
+    {
+      path: "/singup",
+      element: <Singup/>,
     },
   ]);
 
