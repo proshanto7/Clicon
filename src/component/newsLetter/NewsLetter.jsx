@@ -32,13 +32,13 @@ function NewsLetter() {
   ];
 
   return (
-    <section className="bg-primary text-center py-18">
+    <section className="bg-primary text-center py-2 lg:py-18">
       <Container>
         <div>
-          <h2 className="text-[32px] font-semibold text-white leading-10 mb-3">
+          <h2 className="text-2xl sm:text-[28px] lg:text-[32px] font-semibold text-white lg:leading-10 mb-3">
             Subscribe to our newsletter
           </h2>
-          <p className="max-w-134 pb-8 font-normal text-white text-[16px] mx-auto">
+          <p className="max-w-134 pb-8 font-normal text-white text-[14px] sm:text-[16px] mx-auto">
             Praesent fringilla erat a lacinia egestas. Donec vehicula tempor
             libero et cursus. Donec non quam urna. Quisque vitae porta ipsum.
           </p>
@@ -46,7 +46,7 @@ function NewsLetter() {
             <input
               type="text"
               placeholder="Email Address"
-              className="w-full bg-white px-4 py-5 text-[16px] rounded-sm"
+              className="w-full bg-white px-1.5 md:px-4 py-2.5 md:py-5 text-[16px] rounded-sm"
             />
             <Button
               title="Subscribe"
@@ -54,9 +54,13 @@ function NewsLetter() {
             />
           </div>
 
-          <div className="flex justify-center gap-12 items-center mt-8">
+          <div className="flex items-center justify-center gap-3  lg:gap-12 mt-3 lg:mt-8">
             {company.map((company) => (
-              <Image imgUrl={company.img} alt="img" />
+              <Image
+                imgUrl={company.img}
+                alt="img"
+                className="md:max-w-full max-w-[15%]"
+              />
             ))}
           </div>
         </div>
