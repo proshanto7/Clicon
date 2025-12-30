@@ -57,6 +57,7 @@ function NewsLetter() {
           <div className="flex items-center justify-center gap-3  lg:gap-12 mt-3 lg:mt-8">
             {company.map((company) => (
               <Image
+                key={company.id}
                 imgUrl={company.img}
                 alt="img"
                 className="md:max-w-full max-w-[15%]"

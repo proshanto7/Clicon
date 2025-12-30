@@ -1,12 +1,11 @@
-import React from "react";
 import Image from "../ui/Image";
 
-function Product({ item, key }) {
+function Product({ item }) {
   let { title, price, img } = item;
 
   return (
     <div
-      key={key}
+      key={item.id}
       className="max-w-78 border border-textColor/20 mb-4 flex flex-col sm:flex-row gap-4 items-center justify-between rounded-[3px] p-3 hover:bg-warning/60 duration-300 cursor-pointer"
     >
       <div>

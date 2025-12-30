@@ -156,7 +156,10 @@ function Footer() {
 
               <ul className="text-gray-400">
                 {topCategory.map((item) => (
-                  <li className=" flex items-center gap-1 group text-[14px] font-medium leading-5 relative cursor-pointer mb-2 ">
+                  <li
+                    key={item.id}
+                    className=" flex items-center gap-1 group text-[14px] font-medium leading-5 relative cursor-pointer mb-2 "
+                  >
                     <FaArrowRight className="absolute left-0 opacity-0 duration-700  group-hover:text-warning group-hover:opacity-100" />
                     <span className="group-hover:translate-x-5 group-hover:text-white duration-300">
                       {item.name}
@@ -172,7 +175,10 @@ function Footer() {
 
               <ul className="text-gray-400">
                 {quickLinks.map((item) => (
-                  <li className=" flex items-center gap-1 group text-[14px] font-medium leading-5 relative cursor-pointer mb-2 ">
+                  <li
+                    key={item.id}
+                    className=" flex items-center gap-1 group text-[14px] font-medium leading-5 relative cursor-pointer mb-2 "
+                  >
                     <FaArrowRight className="absolute left-0 opacity-0 duration-700  group-hover:text-warning group-hover:opacity-100" />
                     <span className="group-hover:translate-x-5 group-hover:text-white duration-300">
                       {item.name}
@@ -203,7 +209,10 @@ function Footer() {
 
               <div className="flex gap-2 flex-wrap">
                 {popularTag.map((item) => (
-                  <p className="border border-white/20 inline-block font-medium text-white leading-5 text-[14px] rounded-sm cursor-pointer hover:bg-gray-800 duration-300 text-center px-3 py-1.5">
+                  <p
+                    key={item.id}
+                    className="border border-white/20 inline-block font-medium text-white leading-5 text-[14px] rounded-sm cursor-pointer hover:bg-gray-800 duration-300 text-center px-3 py-1.5"
+                  >
                     {item.name}
                   </p>
                 ))}

@@ -244,7 +244,10 @@ function Header() {
                       <div className="dropDownList absolute">
                         <ul>
                           {categoryList.map((item) => (
-                            <li className="border border-textColor/20 hover:text-white duration-300 hover:bg-primaryOrenge p-2 mb-2 text-textColor font-semibold ">
+                            <li
+                              className="border border-textColor/20 hover:text-white duration-300 hover:bg-primaryOrenge p-2 mb-2 text-textColor font-semibold "
+                              key={item.id}
+                            >
                               {item.categoryName}
                             </li>
                           ))}
@@ -292,7 +295,10 @@ function Header() {
                     <div className="dropDownList absolute">
                       <ul>
                         {categoryList.map((item) => (
-                          <li className="border border-textColor/20 hover:text-white duration-300 hover:bg-primaryOrenge p-2 mb-2 text-textColor font-semibold ">
+                          <li
+                            className="border border-textColor/20 hover:text-white duration-300 hover:bg-primaryOrenge p-2 mb-2 text-textColor font-semibold "
+                            key={item.id}
+                          >
                             {item.categoryName}
                           </li>
                         ))}

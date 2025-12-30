@@ -7,7 +7,7 @@ import { FiArrowRight } from "react-icons/fi";
 import Products from "./Products";
 import acImg from "../../assets/images/products/ac/ac.png";
 import s23Img from "../../assets/images/products/phone/s23.png";
-import phoneimg from "../../assets/images/products/phone/image.png";
+import phoneimg from "../../assets/images/products/phone/Image.png";
 import oneplusimg from "../../assets/images/products/phone/oneplus.png";
 import headphoneImg from "../../assets/images/products/headphone/headphone.png";
 import monitorImg from "../../assets/images/products/monitor/monitor.png";
