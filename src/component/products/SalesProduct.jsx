@@ -51,46 +51,51 @@ function SalesProduct() {
   ];
 
   return (
-    <section className="py-18">
+    <section className="py-6 md:py-18">
       <Container>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
             <h2 className="font-semibold text-[16px] text-textColor mb-4">
               FLASH SALE TODAY
             </h2>
-
-            {fleshSales.map((item) => (
-              <Product item={item} key={item.id} />
-            ))}
+            <div className="grid grid-cols-3 sm:grid-cols-1 gap-2">
+              {fleshSales.map((item) => (
+                <Product item={item} key={item.id} />
+              ))}
+            </div>
           </div>
           <div>
             <h2 className="font-semibold text-[16px] text-textColor mb-4">
               BEST SELLERS
             </h2>
 
-            {BestSales.map((item) => (
-              <Product item={item} key={item.id} />
-            ))}
+            <div className="grid grid-cols-3 sm:grid-cols-1 gap-2">
+              {BestSales.map((item) => (
+                <Product item={item} key={item.id} />
+              ))}
+            </div>
           </div>
 
           <div>
             <h2 className="font-semibold text-[16px] text-textColor mb-4">
               TOP RATED
             </h2>
-
-            {fleshSales.map((item) => (
-              <Product item={item} key={item.id} />
-            ))}
+            <div className="grid grid-cols-3 sm:grid-cols-1 gap-2">
+              {fleshSales.map((item) => (
+                <Product item={item} key={item.id} />
+              ))}
+            </div>
           </div>
 
           <div>
             <h2 className="font-semibold text-[16px] text-textColor mb-4">
               NEW ARRIVAL
             </h2>
-
-            {BestSales.map((item) => (
-              <Product item={item} key={item.id} />
-            ))}
+            <div className="grid grid-cols-3 sm:grid-cols-1 gap-2">
+              {BestSales.map((item) => (
+                <Product item={item} key={item.id} />
+              ))}
+            </div>
           </div>
         </div>
       </Container>

@@ -7,7 +7,7 @@ function Product({ item, key }) {
   return (
     <div
       key={key}
-      className="max-w-78 border border-textColor/20 mb-4 flex gap-4 items-center justify-between rounded-[3px] p-3 hover:bg-warning/60 duration-300 cursor-pointer"
+      className="max-w-78 border border-textColor/20 mb-4 flex flex-col sm:flex-row gap-4 items-center justify-between rounded-[3px] p-3 hover:bg-warning/60 duration-300 cursor-pointer"
     >
       <div>
         <Image imgUrl={img} alt="img" className="scale-[1.2]" />
