@@ -20,6 +20,7 @@ import { MdOutlineCancel, MdMenu } from "react-icons/md";
 import Image from "../ui/Image";
 import { useState } from "react";
 import { categoryList } from "../category/Category";
+import { Link } from "react-router";
 
 function Header() {
   const [isOn, setIsOn] = useState(true);
@@ -121,13 +122,13 @@ function Header() {
         <div className="bg-primary py-2 md:py-5">
           <Container>
             <div className="flex flex-row justify-between items-center">
-              <a href="#">
+              <Link to="/">
                 <Image
                   imgUrl={logo}
                   alt="logo"
                   className="max-w-[60%] md:max-w-full"
                 />
-              </a>
+              </Link>
 
               <div className="relative hidden md:block">
                 <input
@@ -159,9 +160,9 @@ function Header() {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="/SingUp">
                       <AiOutlineUser />
-                    </a>
+                    </Link>
                   </li>
                   <li className="text-2xl border border-warning lg:hidden flex items-center">
                     <button onClick={() => setMobileMenuBtn(!MobileMenuBtn)}>

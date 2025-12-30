@@ -1,25 +1,22 @@
-import Header from "./component/header/Header";
-import Hero from "./component/hero/Hero";
-import Features from "./component/features/Features";
-import Category from "./component/category/Category";
-import FeaturedProducts from "./component/products/FeaturedProducts";
-import Banner from "./component/banner/Banner";
-import SalesProduct from "./component/products/SalesProduct";
-import NewsLetter from "./component/newsLetter/NewsLetter";
-import Footer from "./component/footer/Footer";
-
+import Home from "./pages/Home";
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
+import Account from "./pages/Account";
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/singUp",
+      element: <Account />,
+    },
+  ]);
+
   return (
     <main className="font-publicSans">
-      <Header />
-      <Hero />
-      <Features />
-      <Category/>
-      <FeaturedProducts/>
-      <Banner/>
-      <SalesProduct/>
-      <NewsLetter/>
-      <Footer/>
+      <RouterProvider router={router} />,
     </main>
   );
 }
