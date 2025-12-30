@@ -19,7 +19,7 @@ function App() {
       <Banner/>
       <SalesProduct/>
       <NewsLetter/>
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   );
 }

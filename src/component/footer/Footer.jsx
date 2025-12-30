@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../common/Container";
 import Image from "../ui/Image";
 import { FaArrowRight } from "react-icons/fa6";
@@ -129,8 +128,8 @@ function Footer() {
   return (
     <footer className="bg-textColor ">
       <Container>
-        <div className="flex justify-between py-18">
-          <div className="text-white w-3/12">
+        <div className="flex flex-col md:flex-row justify-between py-5 lg:py-18">
+          <div className="text-white w-full lg:w-3/12">
             <Image imgUrl={Logo} alt="logo" className="cursor-pointer" />
 
             <p className="text-gray-500 text-[14px] font-normal leading-5 mt-6">
@@ -149,7 +148,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-15 w-4/12 ">
+          <div className="flex gap-15 w-full lg:w-4/12  mt-4 lg:mt-0">
             <div>
               <h2 className="text-[16px] font-medium leading-6 text-white uppercase mb-3">
                 Top Category
@@ -184,7 +183,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex  justify-between w-5/12">
+          <div className="flex flex-col sm:flex-row justify-between md:gap-2 lg:gap-0   w-full lg:w-5/12 mt-4 lg:mt-0">
             <div className="w-5/12">
               <h2 className="text-[16px] font-medium leading-6 text-white uppercase mb-3">
                 Download APp
@@ -197,7 +196,7 @@ function Footer() {
               />
               <Image imgUrl={appStore} alt="img" className="cursor-pointer" />
             </div>
-            <div className="w-7/12">
+            <div className="w-full mt-4 sm:mt-0 lg:w-7/12">
               <h2 className="text-[16px] font-medium leading-6 text-white uppercase mb-3">
                 Popular Tag
               </h2>
@@ -213,15 +212,17 @@ function Footer() {
           </div>
         </div>
       </Container>
-        <div className="border-t border-gray-200/10 py-6">
-          <p className="text-[14px] font-normal text-gray-300 text-center">
-            Kinbo - eCommerce Template © 2025. Design by Templatecookie modify
-            by
-            <a href="https://web.facebook.com/proshanto.sarker.partho/">
-              Proshanto
-            </a>
-          </p>
-        </div>
+      <div className="border-t border-gray-200/10 py-2.5 md:py-6">
+        <p className="text-[14px] font-normal text-gray-300 text-center">
+          Kinbo - eCommerce Template © 2025. Design by Templatecookie modify by
+          <a
+            href="https://web.facebook.com/proshanto.sarker.partho/"
+            className="ms-1.5 text-warning"
+          >
+            Proshanto
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
