@@ -233,7 +233,7 @@ function Header() {
             </Container>
           </div>
         ) : (
-          <div className="absolute w-full lg:hidden block py-1 z-999 -translate-x-400 duration-300">
+          <div className="absolute w-full lg:hidden block py-1 z-999 -translate-x-400 duration-500">
             <Container>
               <div className="bg-red-100 flex flex-col lg:flex-row items-center justify-between ">
                 <div className="w-full">

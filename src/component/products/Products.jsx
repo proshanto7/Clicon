@@ -1,6 +1,7 @@
 import Image from "../ui/Image";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { IoEyeOutline } from "react-icons/io5";
+import { Link } from "react-router";
 function Products({ item }) {
   const star = [
     {
@@ -122,10 +123,11 @@ function Products({ item }) {
 
           <p className="text-gray-500 text-[14px] leading-4 ">({rating})</p>
         </div>
-
-        <h5 className="text-[14px] cursor-pointer hover:text-primaryOrenge duration-300 font-normal leading-5 text-textColor py-2  ">
-          {name}
-        </h5>
+        <Link to="/product-details">
+          <h5 className="text-[14px] cursor-pointer hover:text-primaryOrenge duration-300 font-normal leading-5 text-textColor py-2  ">
+            {name}
+          </h5>
+        </Link>
 
         <strong className="text-[14px] font-semibold text-primary leading-5">
           ${price}
